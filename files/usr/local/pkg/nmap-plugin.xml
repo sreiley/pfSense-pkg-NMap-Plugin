@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE packagegui SYSTEM "../schema/packages.dtd">
+<?xml-stylesheet type="text/xsl" href="../xsl/package.xsl"?>
+<packagegui>
+  <copyright>
+  <![CDATA[
+/* COPYRIGHT GOES HERE */
+  ]]>
+  </copyright>
+  <name>nmap-plugin</name>
+  <description>The NMap Plugin is used to make accessing your NMap scans easier!</description>
+  <requirements>None</requirements>
+  <faq>Currently there are no FAQ items provided.</faq>
+  <version>0.99</version>
+  <title>Services: NMap-Plugin</title>
+  <savetext>Sync Package</savetext>
+  <include_file>/usr/local/pkg/nmap-plugin.inc</include_file>
+  <menu>
+     <name>NMap-Plugin</name>
+     <section>Services</section>
+     <configfile>nmap-plugin.xml</configfile>
+     <tooltiptext><![CDATA[ <p>The Nmap Plugin makes accessing Nmap scans easier!</p> ]]></tooltiptext>
+	 <!--<url>/pkg_edit.php?xml=nmap-plugin.xml</url>-->
+	 <url>/nmap-plugin/nmap-plugin-schedule-scan-times.php</url>
+  </menu>
+  <tabs>
+     <tab>
+        <text>Main Page</text>
+        <url>/pkg_edit.php?xml=nmap-plugin.xml</url>
+        <active/>
+		<no_drop_down/>
+     </tab>
+     <tab>
+        <text>Scan Times</text>
+        <url>/nmap-plugin/nmap-plugin-schedule-scan-times.php</url>
+		<no_drop_down/>
+     </tab>
+	 <tab>
+		<text>Email Setup</text>
+		<url>/nmap-plugin/nmap-plugin-email-setup.php</url>
+		<no_drop_down/>
+	 </tab>
+     <tab>
+        <text>Auto Scans</text>
+        <url>/nmap-plugin/nmap-plugin-auto-scans.php</url>
+		<no_drop_down/>
+     </tab>
+     <tab>
+       	<text>NMap Scan</text>
+		<url>/nmap-plugin/nmap-plugin-nmap-scan.php</url>
+		<no_drop_down/>
+	 </tab>
+     <tab>
+       	<text>Scan Results</text>
+		<url>/nmap-plugin/nmap-plugin-scan-results.php</url>
+		<no_drop_down/>
+	 </tab>
+  </tabs>
+  <configpath>installedpackages->package->$packagename->configuration->nmap-plugin</configpath>
+  <additional_files_needed>
+     <prefix>/usr/local/pkg/</prefix>
+     <chmod>644</chmod>
+     <item>http://172.28.210.41/packages/config/nmap-plugin/nmap-plugin.inc</item>
+  </additional_files_needed>
+  <additional_files_needed>
+     <prefix>/usr/local/pkg/</prefix>
+     <chmod>644</chmod>
+     <item>http://172.28.210.41/packages/config/nmap-plugin/nmap-plugin.xml</item>
+  </additional_files_needed>
+  <additional_files_needed>
+     <prefix>/usr/local/www/nmap-plugin/</prefix>
+     <chmod>644</chmod>
+     <item>http://172.28.210.41/packages/config/nmap-plugin/nmap-plugin-schedule-scan-times.php</item>
+  </additional_files_needed>
+  <additional_files_needed>
+	 <prefix>/usr/local/www/nmap-plugin/</prefix>
+	 <chmod>644</chmod>
+	 <item>http://172.28.210.41/packages/config/nmap-plugin/nmap-plugin-email-setup.php</item>
+  </additional_files_needed>
+  <additional_files_needed>
+     <prefix>/usr/local/www/nmap-plugin/</prefix>
+     <chmod>644</chmod>
+     <item>http://172.28.210.41/packages/config/nmap-plugin/nmap-plugin-auto-scans.php</item>
+  </additional_files_needed>
+  <additional_files_needed>
+     <prefix>/usr/local/www/nmap-plugin/</prefix>
+     <chmod>644</chmod>
+     <item>http://172.28.210.41/packages/config/nmap-plugin/nmap-plugin-nmap-scan.php</item>
+  </additional_files_needed>
+  <additional_files_needed>
+     <prefix>/usr/local/www/nmap-plugin/</prefix>
+     <chmod>644</chmod>
+     <item>http://172.28.210.41/packages/config/nmap-plugin/nmap-plugin-scan-results.php</item>
+  </additional_files_needed>
+  <additional_files_needed>
+     <prefix>/usr/local/www/nmap-plugin/</prefix>
+     <chmod>644</chmod>
+     <item>http://172.28.210.41/packages/config/nmap-plugin/nmap-plugin-view-results.php</item>
+  </additional_files_needed>
+  <additional_files_needed>
+     <prefix>/usr/local/pkg/nmap-plugin/</prefix>
+     <chmod>755</chmod>
+     <item>http://172.28.210.41/packages/config/nmap-plugin/nmap-scan-dhcp.sh</item>
+  </additional_files_needed>
+  <additional_files_needed>
+     <prefix>/usr/local/pkg/nmap-plugin/</prefix>
+     <chmod>755</chmod>
+     <item>http://172.28.210.41/packages/config/nmap-plugin/nmap-scan-arp.sh</item>
+  </additional_files_needed>
+  <additional_files_needed>
+     <prefix>/usr/local/pkg/nmap-plugin/</prefix>
+	 <chmod>755</chmod>
+	 <item>http://172.28.210.41/packages/config/nmap-plugin/interface-information.php</item>
+  </additional_files_needed>
+  <additional_files_needed>
+     <prefix>/usr/local/pkg/nmap-plugin/</prefix>
+	 <chmod>755</chmod>
+	 <item>http://172.28.210.41/packages/config/nmap-plugin/auto-nmap-scans.php</item>
+  </additional_files_needed>
+  <additional_files_needed>
+     <prefix>/usr/local/pkg/nmap-plugin/</prefix>
+	 <chmod>755</chmod>
+	 <item>http://172.28.210.41/packages/config/nmap-plugin/auto-nmap-scans.sh</item>
+  </additional_files_needed>
+  <additional_files_needed>
+     <prefix>/usr/local/pkg/nmap-plugin/</prefix>
+     <chmod>755</chmod>
+     <item>http://172.28.210.41/packages/config/nmap-plugin/nmap-plugin-encode-data.php</item>
+  </additional_files_needed>
+  <additional_files_needed>
+     <prefix>/usr/local/pkg/nmap-plugin/</prefix>
+     <chmod>755</chmod>
+     <item>http://172.28.210.41/packages/config/nmap-plugin/nmap-plugin-decode-data.php</item>
+  </additional_files_needed>
+	<fields>
+		<field>
+			<name>NMap-Plugin</name>
+			<type>listtopic</type>
+		</field>
+		<field>
+			<fielddescr>Package Info</fielddescr>
+			<fieldname>Package-Info</fieldname>
+			<type>info</type>
+			<description>The NMap Plugin is able to automatically retrieve hosts, that need to have an NMap scan ran on, from the active DHCP leases and from any active IP addresses on the LAN's subnet. You are able to setup specific times and/or dates to when an NMap scan will be ran, which is setup using crontab. After an NMap scan has finished, any differences between the new NMap scan results and the previous NMap scan results will be saved and an email will be sent to a specific email address. If there are no previous NMap scan results then the new results will be saved and an email will be sent to notify of a newly discovered host. While browsing the menus, you can find the "Scan Results" tab which allows you to view any NMap scan results without the need of going to the email or the need of going to the Shell Console to view these scan results. Below is a description of what each tab does and their purpose to the NMap Plugin.</description>
+		</field>
+		<field>
+			<fielddescr>Schedule Scan Times</fielddescr>
+			<fieldname> </fieldname>
+			<type>info</type>
+			<description>The "Schedule Scan Times" tab is where you would specify specific times where you would like an NMap scan to be ran at. Scheduled times can be highly specific to very general, depending on what you are wanting.</description>
+		</field>
+		<field>
+			<fielddescr>Email Setup</fielddescr>
+			<fieldname> </fieldname>
+			<type>info</type>
+			<description>The "Email Setup" tab will be to setup the location of the NMap scan results. Any differences that are found within the NMap scan results will be saved while an email will sent to the specified location to notify of these new changes.</description>
+		</field>
+		<field>
+			<fielddescr>Auto Scans</fielddescr>
+			<fieldname> </fieldname>
+			<type>info</type>
+			<description>The "Auto Scans" tab would be where you will start, stop, or reset the NMap scans. Here you will also be able to select through the different scan type options and choose which one(s) you would like to run.</description>
+		</field>
+		<field>
+			<fielddescr>NMap Scan</fielddescr>
+			<fieldname> </fieldname>
+			<type>info</type>
+			<description>The "NMap Scan" tab is used to run a manual NMap scan onto a specified hosts.</description>
+		</field>
+		<field>
+			<fielddescr>Scan Results</fielddescr>
+			<fieldname> </fieldname>
+			<type>info</type>
+			<description>The "Scan Results" tab is used to view the NMap scan results of hosts without the need of using shell.</description>
+		</field>
+<!--/* DELETE THE BELOW FIELD TAG ONCE PACKAGE IS FINISHED */-->
+		<field>
+			<fielddescr>Update Package</fielddescr>
+			<fieldname>Update Package</fieldname>
+			<type>info</type>
+			<description>
+<![CDATA[
+<style>
+	pre {
+		display: block;
+		font-family: monospace;
+		white-space: pre;
+		margin: 1em 0;
+	}
+</style>
+<pre>
+<a href="http://192.168.1.1/pkg_mgr_install.php?mode=reinstallpkg&pkg=nmap-plugin"><b>Update Package</b></a>
+</pre>
+<br/><br/><br/>
+]]>
+			</description>
+		</field>
+<!--/* DELETE THE ABOVE FIELD TAG ONCE PACKAGE IS FINISHED */-->
+	</fields>
+  <custom_add_php_command>
+  nmap_plugin_sync_package();
+  </custom_add_php_command>
+  <custom_php_resync_config_command>
+  nmap_plugin_sync_package();
+  </custom_php_resync_config_command>
+  <custom_delete_php_command>
+  nmap_plugin_sync_package();
+  </custom_delete_php_command>
+  <custom_php_install_command>
+  nmap_plugin_install_command();
+  </custom_php_install_command>
+  <custom_php_deinstall_command>
+  nmap_plugin_deinstall_command();
+  </custom_php_deinstall_command>
+</packagegui>
