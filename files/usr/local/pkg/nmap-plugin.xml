@@ -60,77 +60,77 @@
   <additional_files_needed>
      <prefix>/usr/local/pkg/</prefix>
      <chmod>644</chmod>
-     <item>http://172.28.210.41/packages/config/nmap-plugin/nmap-plugin.inc</item>
+     <item>http://$ip_address/packages/config/nmap-plugin/nmap-plugin.inc</item>
   </additional_files_needed>
   <additional_files_needed>
      <prefix>/usr/local/pkg/</prefix>
      <chmod>644</chmod>
-     <item>http://172.28.210.41/packages/config/nmap-plugin/nmap-plugin.xml</item>
+     <item>http://$ip_address/packages/config/nmap-plugin/nmap-plugin.xml</item>
   </additional_files_needed>
   <additional_files_needed>
      <prefix>/usr/local/www/nmap-plugin/</prefix>
      <chmod>644</chmod>
-     <item>http://172.28.210.41/packages/config/nmap-plugin/nmap-plugin-schedule-scan-times.php</item>
+     <item>http://$ip_address/packages/config/nmap-plugin/nmap-plugin-schedule-scan-times.php</item>
   </additional_files_needed>
   <additional_files_needed>
 	 <prefix>/usr/local/www/nmap-plugin/</prefix>
 	 <chmod>644</chmod>
-	 <item>http://172.28.210.41/packages/config/nmap-plugin/nmap-plugin-email-setup.php</item>
+	 <item>http://$ip_address/packages/config/nmap-plugin/nmap-plugin-email-setup.php</item>
   </additional_files_needed>
   <additional_files_needed>
      <prefix>/usr/local/www/nmap-plugin/</prefix>
      <chmod>644</chmod>
-     <item>http://172.28.210.41/packages/config/nmap-plugin/nmap-plugin-auto-scans.php</item>
+     <item>http://$ip_address/packages/config/nmap-plugin/nmap-plugin-auto-scans.php</item>
   </additional_files_needed>
   <additional_files_needed>
      <prefix>/usr/local/www/nmap-plugin/</prefix>
      <chmod>644</chmod>
-     <item>http://172.28.210.41/packages/config/nmap-plugin/nmap-plugin-nmap-scan.php</item>
+     <item>http://$ip_address/packages/config/nmap-plugin/nmap-plugin-nmap-scan.php</item>
   </additional_files_needed>
   <additional_files_needed>
      <prefix>/usr/local/www/nmap-plugin/</prefix>
      <chmod>644</chmod>
-     <item>http://172.28.210.41/packages/config/nmap-plugin/nmap-plugin-scan-results.php</item>
+     <item>http://$ip_address/packages/config/nmap-plugin/nmap-plugin-scan-results.php</item>
   </additional_files_needed>
   <additional_files_needed>
      <prefix>/usr/local/www/nmap-plugin/</prefix>
      <chmod>644</chmod>
-     <item>http://172.28.210.41/packages/config/nmap-plugin/nmap-plugin-view-results.php</item>
+     <item>http://$ip_address/packages/config/nmap-plugin/nmap-plugin-view-results.php</item>
   </additional_files_needed>
   <additional_files_needed>
      <prefix>/usr/local/pkg/nmap-plugin/</prefix>
      <chmod>755</chmod>
-     <item>http://172.28.210.41/packages/config/nmap-plugin/nmap-scan-dhcp.sh</item>
+     <item>http://$ip_address/packages/config/nmap-plugin/nmap-scan-dhcp.sh</item>
   </additional_files_needed>
   <additional_files_needed>
      <prefix>/usr/local/pkg/nmap-plugin/</prefix>
      <chmod>755</chmod>
-     <item>http://172.28.210.41/packages/config/nmap-plugin/nmap-scan-arp.sh</item>
+     <item>http://$ip_address/packages/config/nmap-plugin/nmap-scan-arp.sh</item>
   </additional_files_needed>
   <additional_files_needed>
      <prefix>/usr/local/pkg/nmap-plugin/</prefix>
 	 <chmod>755</chmod>
-	 <item>http://172.28.210.41/packages/config/nmap-plugin/interface-information.php</item>
+	 <item>http://$ip_address/packages/config/nmap-plugin/interface-information.php</item>
   </additional_files_needed>
   <additional_files_needed>
      <prefix>/usr/local/pkg/nmap-plugin/</prefix>
 	 <chmod>755</chmod>
-	 <item>http://172.28.210.41/packages/config/nmap-plugin/auto-nmap-scans.php</item>
+	 <item>http://$ip_address/packages/config/nmap-plugin/auto-nmap-scans.php</item>
   </additional_files_needed>
   <additional_files_needed>
      <prefix>/usr/local/pkg/nmap-plugin/</prefix>
 	 <chmod>755</chmod>
-	 <item>http://172.28.210.41/packages/config/nmap-plugin/auto-nmap-scans.sh</item>
+	 <item>http://$ip_address/packages/config/nmap-plugin/auto-nmap-scans.sh</item>
   </additional_files_needed>
   <additional_files_needed>
      <prefix>/usr/local/pkg/nmap-plugin/</prefix>
      <chmod>755</chmod>
-     <item>http://172.28.210.41/packages/config/nmap-plugin/nmap-plugin-encode-data.php</item>
+     <item>http://$ip_address/packages/config/nmap-plugin/nmap-plugin-encode-data.php</item>
   </additional_files_needed>
   <additional_files_needed>
      <prefix>/usr/local/pkg/nmap-plugin/</prefix>
      <chmod>755</chmod>
-     <item>http://172.28.210.41/packages/config/nmap-plugin/nmap-plugin-decode-data.php</item>
+     <item>http://$ip_address/packages/config/nmap-plugin/nmap-plugin-decode-data.php</item>
   </additional_files_needed>
 	<fields>
 		<field>
@@ -189,7 +189,7 @@
 	}
 </style>
 <pre>
-<a href="http://192.168.1.1/pkg_mgr_install.php?mode=reinstallpkg&pkg=nmap-plugin"><b>Update Package</b></a>
+<a href="http://$ip_address/pkg_mgr_install.php?mode=reinstallpkg&pkg=nmap-plugin"><b>Update Package</b></a>
 </pre>
 <br/><br/><br/>
 ]]>
