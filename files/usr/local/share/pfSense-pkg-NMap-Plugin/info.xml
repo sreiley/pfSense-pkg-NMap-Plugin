@@ -1,0 +1,27 @@
+<package>
+	<name>nmap-plugin</name>
+	<internal_name>nmap-plugin</internal_name>
+	<maintainer>shean.d.reiley@gmail.com</maintainer>
+	<descr>The NMap Plugin makes accessing NMap scans easier. The NMap Plugin can run scheduled NMap scans and find the difference between NMap scans while sending emails based on those differences. NOTE: Please download the NMap package for pfSense before using this package</descr>
+	<category>Services</category>
+	<config_file>http://172.28.210.41/packages/config/nmap-plugin/nmap-plugin.xml</config_file>
+	<version>0.99</version>
+	<status>Alpha</status>
+	<pkginfolink>http://172.28.210.41/Nmap-Plugin-Main.php</pkginfolink>
+	<required_version>2.2</required_version>
+	<configurationfile>nmap-plugin.xml</configurationfile>
+</package>
+</package>
+<menu>
+	<name>NMap-Plugin</name>
+	<section>Services</section>
+	<configfile>nmap-plugin.xml</configfile>
+	<tooltiptext>&lt;p&gt;The NMap Plugin makes accessing NMap scans easier!&lt;/p&gt; </tooltiptext>
+	<url>/pkg_edit.php?xml=nmap-plugin.xml</url>
+</menu>
+<tab>
+	<text>Main Page</text>
+	<url>/pkg_edit?xml=nmap-plugin.xml</url>
+	<active/>
+	<no_drop_down/>
+</tab>
