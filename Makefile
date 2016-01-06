@@ -18,6 +18,8 @@ do-extract:
 ${MKDIR} ${WRKSRC}
 do-install:
 ${MKDIR} ${STAGEDIR}${PREFIX}/pkg
+${MKDIR} ${STAGEDIR}${PREFIX}/pkg/nmap-plugin
+${MKDIR} ${STAGEDIR}${PREFIX}/www/nmap-plugin
 ${MKDIR} ${STAGEDIR}/etc/inc/priv
 ${MKDIR} ${STAGEDIR}${DATADIR}
 	${INSTALL_DATA} -m 0644 ${FILESDIR}${PREFIX}/pkg/nmap-plugin.xml \
